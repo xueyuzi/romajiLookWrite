@@ -39,10 +39,10 @@ class App extends Component {
           <p>{this.state.showPian?this.state.luomaData.pian:"※※※"}</p>
         </Card>
         <div  style={{ marginTop:"20px"}}>
-          <Button  style={{ margin:"0 20px"}}  type={this.state.showLuoma?"primary":""} onClick={()=>{this.setState({showLuoma:!this.state.showLuoma})}}>罗马音</Button>        
-          <Button  style={{ margin:"0 20px"}}  type={this.state.showPin?"primary":""} onClick={()=>{this.setState({showPin:!this.state.showPin})}}>平假名</Button>        
-          <Button style={{ margin:"0 20px"}} type={this.state.showPian?"primary":""} onClick={()=>{this.setState({showPian:!this.state.showPian})}}>片假名</Button>        
-          <Button style={{ margin:"0 20px"}} type="primary" onClick={this.getLuoma}>下一个</Button>
+          <Button  style={{ margin:"10px"}}  type={this.state.showLuoma?"primary":""} onClick={()=>{this.setState({showLuoma:!this.state.showLuoma})}}>罗马音</Button>        
+          <Button  style={{ margin:"10px"}}  type={this.state.showPin?"primary":""} onClick={()=>{this.setState({showPin:!this.state.showPin})}}>平假名</Button>        
+          <Button style={{ margin:"10px"}} type={this.state.showPian?"primary":""} onClick={()=>{this.setState({showPian:!this.state.showPian})}}>片假名</Button>        
+          <Button style={{ margin:"10px"}} type="primary" onClick={this.getLuoma}>下一个</Button>
         </div>
 
 
