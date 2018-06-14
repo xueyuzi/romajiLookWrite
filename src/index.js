@@ -1,8 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import {BrowserRouter as Router , Route, Link} from "react-router-dom"
+import routeConfig from "./routeConfig"
+import {renderRoutes} from "react-router-config"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+ReactDOM.render(
+<Router>
+    <div>
+    <Header />
+    {renderRoutes(routeConfig)}
+    <Footer />
+    </div>
+</Router>
+, document.getElementById('root'));
 registerServiceWorker();

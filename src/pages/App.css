@@ -1,0 +1,11 @@
+@import '~antd/dist/antd.css';
+
+/* overflow */
+.ant-card-head-title{
+  font-size: 30px;
+}
+
+.App {
+  text-align: center;
+  margin-top:20px;
+}

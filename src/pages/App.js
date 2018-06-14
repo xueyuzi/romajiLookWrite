@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import {getListRanDom} from "../common";
 import './App.css';
-import luomaData from "./data/luoma"
+import luomaData from "../data/luoma"
+
 import { Card, Button,Divider } from 'antd';
 
 class App extends Component {
   getLuoma = () => {
-    let choose = luomaData[parseInt(Math.random() * luomaData.length)]
+    // 随机一个五十音
+    let choose = getListRanDom(luomaData)
     this.setState({
       luomaData:{
         luoma: choose.luoma,
@@ -44,11 +46,6 @@ class App extends Component {
           <Button style={{ margin:"10px"}} type={this.state.showPian?"primary":""} onClick={()=>{this.setState({showPian:!this.state.showPian})}}>片假名</Button>        
           <Button style={{ margin:"10px"}} type="primary" onClick={this.getLuoma}>下一个</Button>
         </div>
-
-
-        <Divider style={{ bottom: "10px",position: "absolute",top: "auto"}}>
-        Make by <a href="https://xueyuzi.com/">@鳕鱼子</a>
-        </Divider>
       </div>
     );
   }
