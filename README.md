@@ -5,6 +5,6 @@
 #### $ npm install
 #### $ npm start
 
-[Imgur](https://i.imgur.com/jA7lRKY.jpg)
+[img]https://i.imgur.com/CBh4aWc.jpg[/img]
 
 [Imgur](https://i.imgur.com/CBh4aWc.jpg)
