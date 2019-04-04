@@ -4,3 +4,7 @@
 ## 使用方法 :
 #### $ npm install
 #### $ npm start
+
+[Imgur](https://i.imgur.com/jA7lRKY.jpg)
+
+[Imgur](https://i.imgur.com/CBh4aWc.jpg)
