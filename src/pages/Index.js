@@ -1,6 +1,4 @@
 import React ,{Component} from "react";
-import { Card, Col, Row } from 'antd';
-import {Link} from "react-router-dom"
 
 class Index extends Component {
     render(){

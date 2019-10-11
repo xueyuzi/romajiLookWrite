@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import Papa from "papaparse"
 import { getListRanDom } from "../common"
 import {Button,Card} from "antd";
-import { list } from "postcss";
 class Words extends Component {
     state = {
         fuciData: [],
@@ -40,9 +39,9 @@ class Words extends Component {
     }
     render() {
 
-        var fuciRandom = this.state.fuciData.map(e => (
-            <li>{e.title}  ： {e.content}</li>
-        ))
+        // var fuciRandom = this.state.fuciData.map(e => (
+        //     <li>{e.title}  ： {e.content}</li>
+        // ))
 
         var randomContext = this.state.randomContext
         console.log(randomContext)

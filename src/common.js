@@ -1,3 +1,3 @@
 export function getListRanDom(list){
-    return list[parseInt(Math.random() * list.length)]
+    return list[parseInt(Math.random() * list.length,10)]
 }

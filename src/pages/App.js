@@ -3,7 +3,7 @@ import {getListRanDom} from "../common";
 import './App.css';
 import luomaData from "../data/luoma"
 
-import { Card, Button,Divider } from 'antd';
+import { Card, Button } from 'antd';
 
 class App extends Component {
   getLuoma = () => {
